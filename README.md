@@ -1,31 +1,53 @@
-AI Retail Operations Copilot
+# AI Retail Inventory Intelligence Platform
 
-Features:
-Inventory analytics
-Reorder recommendations
-Store performance
-Weather impact
-Top selling products
-AI-powered operational insights
+An AI-powered backend platform for retail inventory analytics and decision support.
 
-ARCHITECTURE:
-User
-↓
-FastAPI
-↓
-Analytics Services
-↓
-PostgreSQL
-↓
-Groq LLM
-↓
-Business Recommendations
+## Features
 
+- Inventory analytics
+- Low-stock detection
+- Reorder recommendations
+- Store performance analysis
+- Weather impact analysis
+- Top-selling products
+- AI Retail Copilot (Groq LLM)
+- Dockerized FastAPI application
 
-Example Questions: 
+## Tech Stack
+
+- Python
+- FastAPI
+- PostgreSQL
+- SQLAlchemy
+- Pydantic
+- Docker
+- Groq LLM
+
+## APIs
+
+### Analytics
+
+- GET /analytics/low-stock
+- GET /analytics/top-selling-products
+- GET /analytics/store-performance
+- GET /analytics/weather-impact
+- GET /analytics/reorder-recommendations
+
+### AI
+
+- POST /ai/ask
+
+Example questions:
+
 - What should I restock today?
-- Which store needs attention?
+- Which store needs the most attention?
 - Summarize inventory health.
-- How does weather affect sales?
+- How is weather affecting sales?
+
+## Running
+
+```bash
+docker compose up --build
+```
 
 
